@@ -6,19 +6,26 @@ Uses the [`node-retrieve-globals` package](https://github.com/zachleat/node-retr
 
 Check out `page.njk` for a Nunjucks example but this will work in any Eleventy template type (including Custom ones).
 
+## Example
 
-```html
+```js
 ---javascript
-// export a literal
 const myString = "Hi";
 
+// export a function
+function myFunction() {}
+---
+<!-- The template content goes here -->
+<div>{{ myString }}</div>
+<div>{{ myFunction() }}</div>
+```
+
+## Advanced Examples
+
+```js
+---javascript
 // async-friendly
 const myAsyncString = await Promise.resolve("HELLO FROM THE OTHER SIDE");
-
-// export a function
-function alwaysBlue() {
-	return "blue";
-}
 
 // export via destructuring assignment
 const { myKey } = { myKey: "myValue" };
@@ -30,7 +37,5 @@ const { noop } = await import("@zachleat/noop");
 // access Node.js globals like console.log
 console.log({ noop });
 ---
-<span>{{ myString }}</span>
-<span>{{ myAsyncString }}</span>
-<span>{{ alwaysBlue() }}</span>
+<!-- The template content goes here -->
 ```
