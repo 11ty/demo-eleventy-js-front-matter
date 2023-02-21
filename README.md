@@ -2,7 +2,7 @@
 
 A demo showing how to use free-form JavaScript in front matter to populate the data cascade.
 
-This makes use of [Eleventy’s custom front matter format configuration API](https://www.11ty.dev/docs/data-frontmatter-customize/#example-using-toml-for-front-matter-parsing).
+This makes use of [Eleventy’s custom front matter format configuration API](https://www.11ty.dev/docs/data-frontmatter-customize/#example-use-javascript-in-your-front-matter).
 
 Uses the [`node-retrieve-globals` package](https://github.com/zachleat/node-retrieve-globals/).
 
