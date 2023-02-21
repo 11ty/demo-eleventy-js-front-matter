@@ -12,5 +12,9 @@
 		"@11ty/eleventy": "^2.0.0",
 		"@zachleat/noop": "^1.0.3",
 		"node-retrieve-globals": "^2.0.3"
+	},
+	"funding": {
+		"type": "opencollective",
+		"url": "https://opencollective.com/11ty"
 	}
 }
