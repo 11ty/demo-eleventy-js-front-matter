@@ -2,6 +2,8 @@
 
 A demo showing how to use free-form JavaScript in front matter to populate the data cascade.
 
+Uses the [`node-retrieve-globals` package](https://github.com/zachleat/node-retrieve-globals/).
+
 Check out `page.njk` for a Nunjucks example but this will work in any Eleventy template type (including Custom ones).
 
 
