@@ -1,0 +1,15 @@
+---javascript
+const myKey = await Promise.resolve("HELLO FROM THE OTHER SIDE");
+const { noop } = await import("@zachleat/noop");
+
+console.log({myKey, noop});
+
+function alwaysBlue() {
+	return "blue";
+}
+---
+<span>{{ myKey }}</span>
+<span>{{ alwaysBlue() }}</span>
+
+<!--  @zachleat/noop exports an async function -->
+<span>{{ noop("hello") | await }}</span>
