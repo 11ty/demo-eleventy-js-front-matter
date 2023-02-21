@@ -1,12 +1,24 @@
 ---javascript
-const myKey = await Promise.resolve("HELLO FROM THE OTHER SIDE");
-const { noop } = await import("@zachleat/noop");
+// export a literal
+const myString = "Hi";
 
-console.log({myKey, noop});
+// async-friendly
+const myAsyncString = await Promise.resolve("HELLO FROM THE OTHER SIDE");
 
+// export a function
 function alwaysBlue() {
 	return "blue";
 }
+
+// export via destructuring assignment
+const { myKey } = { myKey: "myValue" };
+const [ first, second ] = [ "first", "second" ];
+
+// export via dynamic import
+const { noop } = await import("@zachleat/noop");
+
+// access Node.js globals like console.log
+console.log({ noop });
 ---
 <span>{{ myKey }}</span>
 <span>{{ alwaysBlue() }}</span>

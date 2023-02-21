@@ -1,6 +1,8 @@
 const { RetrieveGlobals } = require("node-retrieve-globals");
 
 module.exports = function(eleventyConfig) {
+	eleventyConfig.ignores.add("README.md");
+
 	eleventyConfig.addFilter("await", async promise => {
 		return promise;
 	});
