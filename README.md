@@ -2,6 +2,8 @@
 
 A demo showing how to use free-form JavaScript in front matter to populate the data cascade.
 
+This makes use of [Eleventy’s custom front matter format configuration API](https://www.11ty.dev/docs/data-frontmatter-customize/#example-using-toml-for-front-matter-parsing).
+
 Uses the [`node-retrieve-globals` package](https://github.com/zachleat/node-retrieve-globals/).
 
 Check out `page.njk` for a Nunjucks example but this will work in any Eleventy template type (including Custom ones).
@@ -9,6 +11,7 @@ Check out `page.njk` for a Nunjucks example but this will work in any Eleventy t
 ## Example
 
 ```js
+
 ---javascript
 const myString = "Hi";
 
@@ -18,6 +21,8 @@ function myFunction() {}
 <!-- The template content goes here -->
 <div>{{ myString }}</div>
 <div>{{ myFunction() }}</div>
+
+
 ```
 
 ### More Advanced Examples
