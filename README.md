@@ -11,7 +11,6 @@ Check out `page.njk` for a Nunjucks example but this will work in any Eleventy t
 ## Example
 
 ```js
-
 ---javascript
 const myString = "Hi";
 
@@ -21,8 +20,6 @@ function myFunction() {}
 <!-- The template content goes here -->
 <div>{{ myString }}</div>
 <div>{{ myFunction() }}</div>
-
-
 ```
 
 ### More Advanced Examples
