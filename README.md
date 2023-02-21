@@ -20,7 +20,7 @@ function myFunction() {}
 <div>{{ myFunction() }}</div>
 ```
 
-## Advanced Examples
+### More Advanced Examples
 
 ```js
 ---javascript
