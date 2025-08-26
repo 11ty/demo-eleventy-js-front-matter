@@ -1,5 +1,7 @@
 # demo-eleventy-javascript-front-matter
 
+✅ This functionality is [now available in Eleventy v3 core](https://www.11ty.dev/docs/data-frontmatter/#java-script-front-matter) and doesn’t require any additional configuration — just use the `js` or `javascript` front matter type!
+
 A demo showing how to use free-form JavaScript in front matter to populate the data cascade.
 
 This makes use of [Eleventy’s custom front matter format configuration API](https://www.11ty.dev/docs/data-frontmatter-customize/#example-use-javascript-in-your-front-matter).
