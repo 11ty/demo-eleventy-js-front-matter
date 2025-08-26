@@ -1,5 +1,6 @@
 const { RetrieveGlobals } = require("node-retrieve-globals");
 
+/** @param {import('@11ty/eleventy').UserConfig} eleventyConfig */
 module.exports = function(eleventyConfig) {
 	eleventyConfig.ignores.add("README.md");
 
